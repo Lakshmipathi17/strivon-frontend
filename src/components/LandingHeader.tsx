@@ -26,7 +26,7 @@ export default function LandingHeader() {
           </button>
         </div>
       </header>
-      {isLoginOpen && <LoginModal isOpen={isLoginOpen} onClose={() => setIsLoginOpen(false)} />}
+      {isLoginOpen && <LoginModal onClose={() => setIsLoginOpen(false)} />}
     </>
   );
 }

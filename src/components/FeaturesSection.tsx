@@ -1,4 +1,4 @@
-import { Dumbbell, BarChart3, Users, Calendar, Zap, Target, BrainCircuit } from 'lucide-react';
+import { Dumbbell, BarChart3, Users, Zap, Target, BrainCircuit } from 'lucide-react';
 
 const features = [
   {

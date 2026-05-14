@@ -48,7 +48,7 @@ export default function Workouts({ clientId }: WorkoutsProps) {
     const [error, setError] = useState('');
     const [workoutTypes, setWorkoutTypes] = useState<WorkoutType[]>([]);
     const [selectedDate, setSelectedDate] = useState<string>('');
-    const [workoutTypeSearch, setWorkoutTypeSearch] = useState<string>('');
+    const [workoutTypeSearch] = useState<string>('');
     const [newWorkout, setNewWorkout] = useState({
         workoutTypeName: '',
         workoutDate: new Date().toISOString().split('T')[0],

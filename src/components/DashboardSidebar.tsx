@@ -1,5 +1,4 @@
 import { BarChart3, Dumbbell, Target, Settings, LogOut } from 'lucide-react';
-import { useState } from 'react';
 
 interface DashboardSidebarProps {
     activeTab: string;

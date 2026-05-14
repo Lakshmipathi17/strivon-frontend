@@ -19,7 +19,6 @@ export default function SelfTrainedDetails() {
     const navigate = useNavigate();
     const [step, setStep] = useState(1);
     const [showPassword, setShowPassword] = useState(false);
-    const [loading, setLoading] = useState(false);
     const [formData, setFormData] = useState<SelfTrainedUser>({
         name: '',
         userName: '',
@@ -60,7 +59,6 @@ export default function SelfTrainedDetails() {
             return;
         }
         try{
-            setLoading(true);
             //Step 1 Store the userDetails in backend
             await fetch(`${API}/user-signup`, {
                 method: "POST",
@@ -91,8 +89,6 @@ export default function SelfTrainedDetails() {
             console.error("Error saving user data:", error);
             alert("There was an error saving your data. Please try again.");
             return;
-        }finally{
-            setLoading(false);
         }
 
 

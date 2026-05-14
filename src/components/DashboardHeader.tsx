@@ -1,4 +1,4 @@
-import { Moon, Sun, Bell } from 'lucide-react';
+import { Bell } from 'lucide-react';
 import { useState } from 'react';
 
 interface DashboardHeaderProps {
@@ -6,7 +6,6 @@ interface DashboardHeaderProps {
 }
 
 export default function DashboardHeader({ clientName }: DashboardHeaderProps) {
-    const [isDarkMode, setIsDarkMode] = useState(true);
     const currentHour = new Date().getHours();
     const greeting = currentHour < 12 ? 'Good Morning' : currentHour < 18 ? 'Good Afternoon' : 'Good Evening';
 

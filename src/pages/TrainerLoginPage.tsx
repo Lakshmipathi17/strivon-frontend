@@ -9,7 +9,6 @@ export default function TrainerLoginPage() {
     const [phoneNumber, setPhoneNumber] = useState<string>('');
     const [password, setPassword] = useState<string>('');
     const [loading, setLoading] = useState<boolean>(false);
-    const [error, setError] = useState<string>('');
     const navigate = useNavigate();
 
     const handleSubmit = async (e:FormEvent<HTMLFormElement>) => {

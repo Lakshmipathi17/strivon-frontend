@@ -77,7 +77,7 @@ export default function ClientsList() {
         localStorage.setItem('clients', JSON.stringify(updatedClients));
         const updateClient = async ()=>{
             try{
-                const response = await fetch(`${API}/trainer/client-details/edit/${editFormData.id}`, {
+                await fetch(`${API}/trainer/client-details/edit/${editFormData.id}`, {
                     method: "PUT",
                     headers: {
                         "Content-Type": "application/json",
@@ -106,7 +106,7 @@ export default function ClientsList() {
             localStorage.setItem('clients', JSON.stringify(updatedClients));
             const handleDelete = async ()=>{
                 try{
-                    const response = await fetch(`${API}/trainer/client-details/delete/${id}`, {
+                    await fetch(`${API}/trainer/client-details/delete/${id}`, {
                         method: "DELETE",
                         headers: {
                             "Content-Type": "application/json",

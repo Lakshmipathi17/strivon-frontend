@@ -5,11 +5,10 @@ import { useNavigate } from 'react-router-dom';
 const API = import.meta.env.VITE_API_BASE_URL;
 
 interface LoginModalProps {
-  isOpen: boolean;
   onClose: () => void;
 }
 
-export default function LoginModal({ isOpen, onClose }: LoginModalProps) {
+export default function LoginModal({ onClose }: LoginModalProps) {
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
